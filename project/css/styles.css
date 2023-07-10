@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(213, 211, 177);
+    margin-top: 3rem;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 2fr auto  5fr  auto;
+}
+header > img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+
+}
+
+h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    display: inline-block;
+}
+
+li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 22vw;
+}
+li a:hover {
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: #111;
+}
+
+button {
+    width: 22vw;
+}
+
+
+nav {
+    background-color: aliceblue;
+}
+
+
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-areas: "info1 info2 info3";
+    column-gap: 1vw;
+    justify-items: center;
+}
+article {
+    background-color: red;
+}
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+footer {
+    /* background-color: beige; */
+    display: grid;
+    grid-template-areas: "footer1 footer2";
+    height: 10vh;
+}
+footer div {
+    grid-area: "footer2";
+    text-align: center;
+}
+footer img {
+    grid-area: "footer1";
+    width: 3vw;
+    height: auto;
+}
+header img {
+    width: 50vw;
+    height: auto;
+}
+#promotion {
+    grid-area: "promotion";
+    justify-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://greekfiesta.com/wp-content/uploads/2016/02/greekplatter.jpg");
+    background-size: 96vw auto;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+#promotion h1 {
+    text-align: center;
+}
+#promotion p {
+    text-align: center;
+    color: azure;
+    font-size: 1rem;
+}
+#i1 {
+    grid-area: "info1";
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://tmbidigitalassetsazure.blob.core.windows.net/toh/GoogleImagesPostCard/Mediterranean-Tomato-Bites_EXPS_SDDJ17_45438_D08_11_5b.jpg");
+    background-size: 30vw auto;
+    background-repeat: no-repeat;
+    width: 25vw;
+}
+#i2 {
+    grid-area: "info2";
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://www.eatingwell.com/thmb/2BMIJ-b-ofrz0b8BfNLRN4Y8Zlc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mediterranean-chicken-skillet-2000-b2738f54ceb945178bb9754441fd3f83.jpg");
+    width: 25vw;
+
+    background-size: 30vw auto;
+    background-repeat: no-repeat;
+}
+#i3 {
+    grid-area: "info3";
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://oldwayspt.org/sites/default/files/thumbnails/image/Fotolia_66247153_pears_0.jpg");
+
+    background-size: 30vw auto;
+    background-repeat: no-repeat;
+    width: 25vw;
+
+}
+article {
+    transition: transform 1s;
+}
+article:hover {
+    transform: scale3d(1.05,1.05,1.05);
+}
+
